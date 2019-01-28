@@ -5,4 +5,6 @@ Docker file for running Elasticsearch rally
 2. Build this into an image using: docker build -t esrally:0.1 .
 3. Run this image using: docker run -it --net <network_name> esrally:0.1 bash
 4. Get IP address from the host machine: docker network inspect <network_name> 
-5. Using IP address of the container attached to this network, test Elasticsearch from bash of ESRally: curl <ip_address>:9200
+5. Using IP address of the container attached to this network, test Elasticsearch from bash of ESRally: curl elasticsearch:9200
+6. install openjdk-8 using: yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+7. Invoke esrally using: esrally --track=geopoint --target-hosts=elasticsearch:9200 --challenge=append-no-conflicts-index-only --pipeline=benchmark-only 
