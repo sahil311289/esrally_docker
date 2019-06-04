@@ -8,3 +8,4 @@ RUN yum -y install python36u-pip
 RUN yum -y install gcc
 RUN yum -y install python36u-devel
 RUN pip3.6 install esrally
+RUN yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
