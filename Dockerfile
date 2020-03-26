@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7
 
 RUN yum -y install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm
 RUN yum -y install git
