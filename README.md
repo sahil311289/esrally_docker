@@ -7,3 +7,11 @@ Docker file for running Elasticsearch rally
 4. Get IP address from the host machine: docker network inspect <network_name> 
 5. Using IP address of the container attached to this network, test Elasticsearch from bash of ESRally: curl <elasticsearch's IP>:9200
 6. Invoke esrally using: esrally --track=geopoint --target-hosts=elasticsearch:9200 --challenge=append-no-conflicts-index-only --pipeline=benchmark-only 
+
+
+To download all tracks data:
+# downloads the script from Github
+curl -O https://raw.githubusercontent.com/elastic/rally-tracks/master/download.sh
+chmod u+x download.sh
+# download all data for the geonames track
+./download.sh geonames
