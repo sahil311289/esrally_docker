@@ -10,8 +10,8 @@ Docker file for running Elasticsearch rally
 
 
 To download all tracks data:
-# downloads the script from Github
+:downloads the script from Github
 curl -O https://raw.githubusercontent.com/elastic/rally-tracks/master/download.sh
 chmod u+x download.sh
-# download all data for the geonames track
+:download all data for the geonames track
 ./download.sh geonames
